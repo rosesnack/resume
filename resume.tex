@@ -6,58 +6,93 @@
 \usepackage{fontawesome}
 \usepackage[colorlinks,linkcolor=blue]{hyperref}
 
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+% \renewcommand{\baselinestretch}{0.95}  % 压缩行距
+% \footnotesize  % 字体大小
+\setlength{\parskip}{0pt}  % 去除段落间空行
+
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
 \centerline{\huge \bf Dedan Chen}
-\vspace{2ex}
-
-\centerline{\small \faEnvelope~13917374906@163.com \quad \faPhone~(+86) 139-1737-4906}
-
-% \faGithub~\url{https://github.com/rosesnack/}
-
 \vspace{1ex}
+\centerline{
+    \small \faEnvelope~13917374906@163.com \quad \faPhone~(+86) 139-1737-4906 \quad \faGithub~\href{https://github.com/rosesnack}{rosesnack}
+}
 
-\section{\bf Education}
 
-\datedsubsection{\textbf{Nanjing University}}{Sep. 2022 -- Jun. 2026}
-\textit{Bachelor student} in Computer Science \& Technology, GPA: 4.56/5.0
+\section{\bf EDUCATION}
 
-\section{\bf Project Experience}
+\datedsubsection{\textbf{Nanjing University}}{Sep. 2022 -- Jun. 2026(Expected)}
+B.S. in Computer Science \& Technology \hfill Nanjing, China
 
-\datedsubsection{\textbf{Big Data Analysis Platform }}{Oct. 2015 -- Mar. 2016}
 \begin{itemize}
-  \item  Developed distributed algorithms(CART/GBDT/GBRT/RF) on Spark.
-  \item Finished data mining components(Feature-Indexing/Feature-Merging/Feature-Normalization/Scoring).
+    \item  \textbf{GPA}: 4.56/5.0
+    \item \textbf{Scholarships}: Tencent Scholarship, Huawei Scholarship
+    \item \textbf{Core Curriculums}: Data Structures, Operating Systems, Foundations of Computer Networks, Algorithm Design \& Analysis, Introduction to Databases, Introduction to Computer Systems, Advanced Programming
 \end{itemize}
 
-\datedsubsection{\textbf{China Telecom Big Data Application Contest (\nth{1}/1112; Team Leader)}}{Dec. 2015 -- Mar. 2016}
-The goal of this contest is to predict views of users with ten sites succeeding, according to four hundred million user-behavior historical records(25.38G).
+
+\section{\bf PROJECT EXPERIENCE}
+
+\datedsubsection{\textbf{Class Survivor Game (Advanced Programming Course Project)}}{Apr. 2023 -- Jun. 2023}
 \begin{itemize}
-  \item Proposed and implemented a multi-target regression algorithm on Spark. Optimized F1-score 0.8\%.
-  \item Designed and developed a probability ranking model for user classification. Optimized F1-score  0.6\%.
+    \item Built a 2D action game using Qt framework and C++, featuring player control, item/upgrade systems, multiple enemy behaviors, and a polished interface designed with Qt’s graphical components.
+    \item Leveraged Qt's signal-slot mechanism and C++'s object-oriented features (inheritance, polymorphism) to structure flexible and maintainable game logic.
 \end{itemize}
 
-\section{\bf Intern Experience}
-
-\datedsubsection{\textbf{DiDi Research Institute}}{Jul. 2016 -- Sep. 2016}
+\datedsubsection{\textbf{Fundamentals of Computer Systems-PA}}{Sep. 2023 -- Jan. 2024}
 \begin{itemize}
-  \item Developed taxi dispatching system which used to balance the supply and demand between urban areas.
-  \item Reconstructed the log system of dispatching based on Kafka and MySQL.
+    \item Based on the framework code, implemented a complete computer system NEMU, including i386 instruction set, memory management, paging and segmentation mechanism, exception and interrupt, etc.
 \end{itemize}
 
-\datedsubsection{\textbf{Baidu Online Network Technology(Beijing) Co.,Ltd}}{Dec. 2013 -- May. 2014}
+\datedsubsection{\textbf{Huawei Shengsi MindSpore Innovation Training Camp}}{Aug. 2025}
 \begin{itemize}
-  \item Completed the multi-threaded development of LiveWDBBroom, improved the efficiency by two times.
-  \item Completed the development of the Problems-Tracing Platform which was put into service.
-  \item Passed the examination of Code Master(C++), certified as Good Coder.
+    \item Awarded \textbf{First Prize} as part of a team in an AI model development competition hosted by Huawei.
+    \item Built a medical Q\&A chatbot using a fine-tuned GPT-2 model using the MindSpore platform, capable of generating effective medical responses based on user-described symptoms.
 \end{itemize}
 
-\section{\bf Skills}
+
+\section{\bf RESEARCH EXPERIENCE}
+
+\datedsubsection{\textbf{Research on Sentiment Analysis Technology Based on Transformer}}{Dec. 2023 -- Dec. 2024}
 \begin{itemize}
-  \item Skilled in C++, Scala, Shell. Familiar with data structures and algorithms and had good programming style.
-  \item Experienced in development of distributed machine learning algorithms.
-  \item Strong theoretic knowledge on data mining and machine learning.
+    \item Constructed an academic sentiment classification model using 4,000 manually labeled forum texts, identifying both traditional polarity and three types of academic emotions.
+    \item Fine-tuned BERT model achieved F1-scores of 0.795 (academic emotions) and 0.785 (emotional polarity) via five-fold cross-validation. The model was used for sentiment monitoring on the openEuler forum to support user engagement analysis.
+
+
+    \item Integrated Span-ASTE-tool to extract (Aspect, Opinion, Sentiment) triples, enabling deeper analysis of user satisfaction and community climate.
 \end{itemize}
+
+\datedsubsection{\textbf{Contributor Profiling and Recommendation}}{Sep. 2024 -- Jan. 2025}
+\begin{itemize}
+    \item Built a Random Forest model to recommend potential contributors for open-source projects by analyzing users' past GitHub activities (e.g., PRs, pushes).
+\end{itemize}
+
+
+
+\section{\bf INTERNSHIP EXPERIENCE}
+
+\datedsubsection{\textbf{Microsoft Corporation}}{Jan. 2025 - Mar. 2025}
+C + AI China Center One Intern \hfill Beijing, China
+\begin{itemize}
+  \item  \textbf{C\# Code Development}: Participated in the development of the virtual human interaction system's C\# code, including real-time audio stream processing, interaction with OpenAI models, and speech synthesis control. Used the OpenAI RealtimeConversation API for real-time dialogue interaction and added fault recovery features to enhance the product experience.
+  \item \textbf{Prompt Improvement}: Improved the virtual human interaction prompts based on continuous testing and customer feedback, ensuring they better align with the character profile and company background.
+\end{itemize}
+
+
+
+\section{\bf SKILLS}
+\begin{itemize}
+  \item \textbf{Programming Languages:} Proficient in C++, Python; Familiar with Java, C\#, SQL
+  \item \textbf{Techniques \& Tools:} Linux, PyTorch, Git, LaTeX, MySQL
+\end{itemize}
+
 
 \end{document}
